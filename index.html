@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Vikas Laddha | King Of Nifty — VIP Trading Channel</title>
-<link rel="icon" type="image/jpeg" href="king-of-nifty-logo.jpeg">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -400,12 +400,61 @@
   footer .brand{font-size:14px;}
 
   @media (max-width:860px){
-    nav{top:0;}
-    .about{grid-template-columns:1fr;}
+    nav{
+      top:34px;
+      padding:14px 5%;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .nav-logo{width:36px;height:36px;}
+    .brand{font-size:14px;letter-spacing:0.5px;}
+    .nav-cta{font-size:12px;padding:9px 16px;}
+
+    .hero{min-height:auto;padding:60px 6% 70px;}
+    .hero-logo{width:96px;height:96px;margin-bottom:18px;}
+    .live-badge{font-size:10.5px;padding:6px 12px;letter-spacing:1px;gap:6px;}
+    .hero h1{font-size:clamp(28px,8vw,40px);}
+    .hero .king{font-size:clamp(22px,6.5vw,32px);letter-spacing:1.5px;margin-top:8px;}
+    .hero p.tagline{font-size:15px;margin-top:18px;}
+    .hero-ctas{flex-direction:column;width:100%;margin-top:30px;gap:12px;}
+    .btn-primary,.btn-secondary{width:100%;justify-content:center;padding:16px 20px;font-size:14.5px;}
+    .hero-note{font-size:11px;}
+
+    section{padding:64px 6%;}
+    .eyebrow{font-size:11px;letter-spacing:2px;}
+    .sec-desc{font-size:14.5px;}
+
+    .about{grid-template-columns:1fr;gap:36px;}
+    .about-visual{aspect-ratio:16/11;}
+    .about-logo{max-width:170px;}
+    .about-list li{font-size:14px;}
+
     .stats{grid-template-columns:repeat(2,1fr);}
-    .stat:nth-child(3){border-left:none;}
-    .features-grid{grid-template-columns:1fr;}
-    .testi-row{grid-template-columns:1fr;}
+    .stat{padding:30px 14px;border-left:none;border-bottom:1px solid var(--line);}
+    .stat:nth-child(odd){border-right:1px solid var(--line);}
+    .stat:nth-child(3),.stat:nth-child(4){border-bottom:none;}
+    .stat .num{font-size:30px;}
+    .stat .lbl{font-size:11.5px;}
+
+    .features-grid{grid-template-columns:1fr;margin-top:36px;}
+    .feature{padding:28px 22px;}
+
+    .testi-row{grid-template-columns:1fr;margin-top:36px;gap:16px;}
+
+    .vip-panel{padding:34px 22px;}
+    .final-cta .sec-title{font-size:26px;}
+
+    .disclaimer{padding:30px 6%;font-size:11px;}
+
+    footer{flex-direction:column;align-items:flex-start;text-align:left;}
+  }
+
+  @media (max-width:420px){
+    .brand span{display:block;font-size:11px;}
+    .ticker-track{font-size:11.5px;}
+    .ticker-item{margin-right:32px;}
+    .hero h1{font-size:26px;}
+    .hero .king{font-size:20px;}
   }
   @media (prefers-reduced-motion: reduce){
     .ticker-track{animation:none;}
@@ -423,7 +472,7 @@
   <!-- NAV -->
   <nav>
     <div class="brand-group">
-      <img src="king-of-nifty-logo.jpeg" alt="King Of Nifty logo" class="nav-logo">
+      <img src="logo.jpg" alt="King Of Nifty logo" class="nav-logo">
       <div class="brand">DR. VIKAS LADDHA <span>| King Of Nifty</span></div>
     </div>
     <a class="nav-cta" href="https://t.me/+U37bnpY8YjI5ZDdl" target="_blank" rel="noopener">VIP Join Karein</a>
@@ -433,7 +482,7 @@
   <section class="hero">
     <div class="hero-grid"></div>
     <div class="candles" id="candleField"></div>
-    <img src="king-of-nifty-logo.jpeg" alt="King Of Nifty — Dr. Vikas Laddha logo" class="hero-logo">
+    <img src="logo.jpg" alt="King Of Nifty — Dr. Vikas Laddha logo" class="hero-logo">
     <div class="live-badge"><span class="live-dot"></span> LIVE VIP SIGNALS · NIFTY · BANKNIFTY · SENSEX</div>
     <h1>Dr. Vikas Laddha<span class="king">👑 King Of Nifty</span></h1>
     <p class="tagline">Sensex aur Nifty ki har chaal par sateek analysis. Options se lekar swing trades tak — market ka rukh sabse pehle apne VIP members ke saath.</p>
@@ -450,7 +499,7 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="about-visual">
-      <img src="king-of-nifty-logo.jpeg" alt="King Of Nifty logo" class="about-logo">
+      <img src="logo.jpg" alt="King Of Nifty logo" class="about-logo">
       <div class="corner-tag">TECHNICAL ANALYST · NIFTY &amp; BANKNIFTY OPTIONS SPECIALIST</div>
     </div>
     <div>
